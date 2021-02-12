@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="main__container">
+	<header>
+			<div class="header__logo">
+				<img src="img/header__logo.png" alt="">
+			</div>
+			<!-- Поиск -->
+			<div class="header__search">
+				<input class="b-search__string a-c_search" name="q" type="text" aria-label="Поиск" placeholder="Найти песню или исполнителя" >
+				<button class="b-search__submit" aria-label="Поиск" type="submit">
+					<span class="fa fa-search fa-2x">
+					</span>
+				</button>
+			</div>
+
+			<!-- Поиск закрывается   Доделать -->
+			<div class="header__actions">
+			<?php if(isset ($_SESSION['logged_user'])) : ?>
+				Привет, <?php echo $_SESSION['logged_user']; ?>! 
+				<hr>
+				<a href="logout.php">Выйти</a>
+				<?php else : ?>
+					<a href="login.php">
+						<button class="pure-button pure-button-only-hover">Войти</button>
+					</a>
+					<a href="register.php">
+						<button class="pure-button pure-button-only-hover">Регистрация</button>
+					</a>
+					<?php endif; ?>
+				</div>
+				
+	</header>
+		<!-- Закрытие HEADER -->
+		<div class="container">
+			<ul class="songs">
+				<li class="song">
+	<div itemscope itemtype="http://schema.org/MusicComposition">
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-sm-2-3 pure-u-md-3-4">
+            <h1 class="b-title b-title--song" itemprop="name">
+                Гарик Погорелов - Под твоим окном            </h1>
+        </div>
+    </div>
+
+<div class="b-words">
+        
+    
+    
+    <div class="b-words__text-actions clearfix">
+        <div class="b-transpose v-align">
+            <div class="b-transpose__tone ">
+                <div class="b-small-button b-transpose__tone-down noselect" aria-label="Транспонировать на -1">
+                    <span class="fc-icon fc-icon-arrow-left"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+            <div id="slot-before-text"></div>
+    
+    <div class="horizontal-divider"></div>
+
+    <div class="b-words__text-background">
+
+        <div class="b-words__centering" itemprop="lyrics">
+                                <div class="w-words__links">Рекомендуемый Бой: Восьмерка</div>
+                
+            <pre class="w-words__text" itemprop="text">вся песня: <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> 
+
+[Вступление]:
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>  
+Под твоим окном я сегодня сплю
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Потому что хочу видеть тебя наверху
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном гаснет жёлтый свет
+                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Я ловлю губами поцелуи, посланные мне
+                    <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном я сегодня сплю
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Потому что хочу видеть тебя наверху
+                    <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном гаснет жёлтый свет
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Я ловлю губами поцелуи, посланные мне 
+
+[Припев]:
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>  
+Под твоим окном я сегодня сплю
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Потому что хочу видеть тебя наверху
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном гаснет жёлтый свет
+                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Я ловлю губами поцелуи, посланные мне
+
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>  
+Под твоим окном я сегодня сплю
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Потому что хочу видеть тебя наверху
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном гаснет жёлтый свет
+                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Я ловлю губами поцелуи, посланные мне
+ 
+[Переход]:
+                   <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> 
+Под твоим окном  
+                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>  
+Я сегодня сплю  
+                   <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> 
+Под твоим окном  
+                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>  
+Я сегодня сплю
+
+[Куплет 1]:
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                   <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>  
+Когда твоя улыбка стынет на лице
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+И папа не зовёт тебя обратно
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                   <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Я подарю билет тебе на свой концерт
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Послушать мои песни без мата
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                   <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Но ты ненадолго, поверь
+            <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                              <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Тебе в десять надо ровно дома быть
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Это правда (ровно в десять)
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                    <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Я под свою ответственность беру за руку
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                       <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+И веду гулять тебя до завтра (погнали)
+
+<span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                                              <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/F.png?ch201' style='min-width:64px;min-height:64px;' >" >F</a></span>
+Это неважно, что мы с тобой не пара давно
+        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> 
+И твой батя готов меня порвать на куски рваных тряпок
+                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/F.png?ch201' style='min-width:64px;min-height:64px;' >" >F</a></span>
+Если я коснусь твоих губ
+      <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fsharpm.png?ch201' style='min-width:64px;min-height:64px;' >" >F#m</a></span>  
+А тем более, если коснусь их двух (прикинь)
+             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                           <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/F.png?ch201' style='min-width:64px;min-height:64px;' >" >F</a></span>
+Ты как загадка, которую гадать не дано
+        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                                                    <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Gm.png?ch201' style='min-width:64px;min-height:64px;' >" >Gm</a></span>
+Лучшее, что придумать смог - тусить под твоим окном
+       <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/F.png?ch201' style='min-width:64px;min-height:64px;' >" >F</a></span>
+Если завтра не спустишься ты хоть на микрон
+        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+То я ночью заберусь на твой балкон 
+
+[Припев]:
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>  
+Под твоим окном я сегодня сплю
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Потому что хочу видеть тебя наверху
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном гаснет жёлтый свет
+                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Я ловлю губами поцелуи, посланные мне
+
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>  
+Под твоим окном я сегодня сплю
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Потому что хочу видеть тебя наверху
+                     <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span> 
+Под твоим окном гаснет жёлтый свет
+                        <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                             <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Я ловлю губами поцелуи, посланные мне
+
+[Финал]:
+                       <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                  
+Под твоим окном
+                                    <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>
+На скамейке и на тротуаре
+                            <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>
+Буду спать в палатке
+                                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Пока ты спишь дома на диване
+                       <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                              <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>
+Я сегодня сплю — греюсь тупо фонарями
+                 <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                               <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Пока тебя греют мысли о нашем свидании
+                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>  
+Под твоим окном
+                      <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>
+На скамейке и на тротуаре
+              <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>
+Буду спать в палатке
+                                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>
+Пока ты спишь дома на диване
+                <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span>                         <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>
+Я сегодня сплю — измеряю этажами
+                      <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Cm.png?ch201' style='min-width:64px;min-height:64px;' >" >Cm</a></span>                                  <span class="b-accord__symbol"><a class="tooltip" href="#" onclick="return false;" data-title="<img src='/i/img/akkords/Fm.png?ch201' style='min-width:64px;min-height:64px;' >" >Fm</a></span> 
+И считаю в миллиметрах эту пропасть между нами</pre>
+        </div>
+
+            
+            </div>
+</div>
+
+
+</body>
+</html>
