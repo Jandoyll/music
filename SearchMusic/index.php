@@ -1,26 +1,19 @@
-<?php 
-require "libs/rb.php";
- ?>
-
-
+<?php require "db.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SearchMusic</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- MAIN__CONTAINER -->
 	<div class="main__container">
-		<!-- HEADER -->
 		<header>
 			<div class="header__logo">
-				<img src="img/header__logo.png" alt="">
+				<img src="img/logo-1613123879496.png" class="logo" alt="">
 			</div>
-			<!-- Поиск -->
 			<div class="header__search">
 				<input class="b-search__string a-c_search" name="q" type="text" aria-label="Поиск" placeholder="Найти песню или исполнителя" >
 				<button class="b-search__submit" aria-label="Поиск" type="submit">
@@ -28,66 +21,118 @@ require "libs/rb.php";
 					</span>
 				</button>
 			</div>
-
-			<!-- Поиск закрывается   Доделать -->
 			<div class="header__actions">
-			<?php if(isset ($_SESSION['logged_user'])) : ?>
-				Привет, <?php echo $_SESSION['logged_user']; ?>! 
-				<hr>
-				<a href="logout.php">Выйти</a>
-				<?php else : ?>
-					<a href="login.php">
+				<?php if(isset($_SESSION['logged_user'])) : ?>
+					<a href="logout.php">
+					<button class="pure-button pure-button-only-hover">Выйти</button>
+				</a>
+<?php else : ?>
+<a href="login.php">
 						<button class="pure-button pure-button-only-hover">Войти</button>
 					</a>
 					<a href="register.php">
 						<button class="pure-button pure-button-only-hover">Регистрация</button>
 					</a>
-					<?php endif; ?>
-				</div>
-				
+<?php endif; ?>
+</div>
 		</header>
-		<!-- Закрытие HEADER -->
 		<div class="container">
-			<ul class="songs">
-				<li class="song">
-					<a class="song__name" href="garik.html">Гарик Погорелов - Под твоим окном</a>
+				<?php if(isset($_SESSION['logged_user'])) : ?>
+			<div class="songers">
+					<li class="songer">
+					<img src="img/5nizza.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/5nizza/index.php">5'nizza</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/25.17.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/25.17/index.php">25/17</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/anacondaz.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/anacondaz/index.php">Anacondaz</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/comedoz.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/comedoz/index.php">Comedoz</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+
+				<li class="songer">
+					<img src="img/iowa.png" class="songer__img" alt="">
+					<a class="songer__name" href="songs/iowa/index.php">Iowa</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/iowa.png" class="songer__img" alt="">
+					<a class="songer__name" href="songs/noize/index.php">Noize MC</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/aria.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/aria/index.php">Ария</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/affinazh.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/affinazh/index.php">Аффинаж</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/bi2.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/bi2/index.php">Би-2</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/valentin-strikalo.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/valentin-strikalo/index.php">Валентин Стрыкало</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<li class="songer">
+					<img src="img/egor-nats.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="songs/egor-nats/index.php">Егор Натс</a>
 				</li>
-				<li class="song">
-					<a class="song__name" href="">q</a>
+				<?php else : ?>
+				<h4>Для просмотра необходимо <a href="login.php">войти</a>/<a href="register.php">зарегистрироваться</a> </h4>
+
+				<li class="songer">
+					<img src="img/5nizza.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">5'nizza</a>
 				</li>
-			</ul>
+				<li class="songer">
+					<img src="img/25.17.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">25/17</a>
+				</li>
+				<li class="songer">
+					<img src="img/anacondaz.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Anacondaz</a>
+				</li>
+				<li class="songer">
+					<img src="img/comedoz.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Comedoz</a>
+				</li>
+
+				<li class="songer">
+					<img src="img/iowa.png" class="songer__img" alt="">
+					<a class="songer__name" href="">Iowa</a>
+				</li>
+				<li class="songer">
+					<img src="img/iowa.png" class="songer__img" alt="">
+					<a class="songer__name" href="songs/noize/index.php">Noize MC</a>
+				</li>
+				<li class="songer">
+					<img src="img/aria.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Ария</a>
+				</li>
+				<li class="songer">
+					<img src="img/affinazh.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Аффинаж</a>
+				</li>
+				<li class="songer">
+					<img src="img/bi2.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Би-2</a>
+				</li>
+				<li class="songer">
+					<img src="img/valentin-strikalo.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Валентин Стрыкало</a>
+				</li>
+				<li class="songer">
+					<img src="img/egor-nats.jpg" class="songer__img" alt="">
+					<a class="songer__name" href="">Егор Натс</a>
+				</li>
+				<?php endif; ?>
+			</div>
 		</div>
-	</div>
-	<!-- Закрытие MAIN__CONTAINER -->
-</body>
-</html>
+<?php include'footer.php' ?>

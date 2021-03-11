@@ -44,7 +44,7 @@
 			$user->email=$data['email'];
 			$user->password=password_hash($data['password'], PASSWORD_DEFAULT);
 			R::store($user);
-			echo '<div style="color: green;">Вы зарегестрированы!<br/><a href="/">Перейти на главную<a/></div>'; 
+			echo '<div style="color: green;">Вы зарегестрированы!<br/><a href="index.php">Перейти на главную<a/></div>'; 
 		} else
 		{
 			echo '<div style="color: red;">'.array_shift($errors).'</div>'; 	

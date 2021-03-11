@@ -1,6 +1,10 @@
-<?php 
+<?php
 require "libs/rb.php";
- R::setup( 'mysql:host=searchmusic;dbname=registration',
+
+R::setup( 'mysql:host=localhost;dbname=registration',
         'root', 'root' );
- session_start();
- 
+
+if(!R::testConnection()) die('Нет соединения с БД');
+
+session_start(); 
+?>

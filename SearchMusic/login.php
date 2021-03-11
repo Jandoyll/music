@@ -1,16 +1,17 @@
 <?php 
-	require "db.php";
-	$data = $_POST;
-	if( isset($data['do_login']))
+require ('db.php');
+
+$data = $_POST;
+if( isset($data['do_login']))
 	{
 		$errors = array();
 		$user = R::findOne('users','login = ?', array($data['login']));
 		if( $user )
 		{
-			$_SESSION['logged_user'] = $user;
+
 			if(password_verify($data['password'], $user->password)) 
 			{
-				( $_SESSION['logged_user']=$user);
+				$_SESSION['logged_user']=$user;
 				header('Location:/');
 			} else
 			{
@@ -26,6 +27,7 @@
 		}
 	}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
