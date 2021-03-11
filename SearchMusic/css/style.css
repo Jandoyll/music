@@ -1,27 +1,27 @@
 body {
 	font-family: Roboto, sans-serif;
 	margin: 0;
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/bk.png);
 }
 .main__container {
 	position: relative; 
-	background-color: #454D5D;
 	width: 1000px;
 	margin: 0 auto;
-	/*height: 1000px;*/
+	border-left: 2px solid #F76907;
+	border-right: 2px solid #F76907;
 }
 
 header {
-	background:-365px -170px no-repeat #2b303b;
+	background:-365px -170px no-repeat #2B303B;
     position: relative;
     display: flex;
-    border-bottom: 1px solid #BEC0C3;
+    border-bottom: 1px solid #F76907;
 }
 .header__logo {
 	box-sizing:border-box;
 	margin-left: 30px;
 }
-img	{
+.logo	{
 	width:130px; 
 	height:100px;
 	margin-left: 50px;
@@ -38,6 +38,10 @@ img	{
 	position: relative;
 	margin:auto 60px; 
 
+}
+.search{
+	width: 45px;
+	height: 45px;
 }
 .b-search__string {
     width: 400px;
@@ -70,4 +74,119 @@ button{
 button:hover {
 	opacity: 0.3;
 }
+.container {
+	background-color: #DBDBDB;
+	padding-top: 2%;
+}
+li {
+	list-style-type: none;
+	margin-top: 0;
+	margin-left: 10%;
+}
 
+a {
+	text-decoration: none;
+	color: #198496;
+}
+.back {
+	margin-left: 10%;
+	color:#F76907;
+	opacity: 0.5;
+}
+.back:hover{
+	opacity: 0.8;
+}
+h {
+	color:#198496;
+}
+.song {
+	margin: 0 10%; 
+}
+
+.songer {
+	padding: 15px 0;
+	margin-right: 10%;
+	border-top: 1px solid;
+
+}
+.songer:first-child {
+	border:none;
+}
+.songer__name {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	margin-left: 1%;
+}
+.songer__img {
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    margin-left: 0;
+}
+.songer__img:hover {
+	width: 150px;
+	height: 150px;
+}
+h4{
+	margin-left: 10%;
+}
+.song {
+	padding: 15px 0;
+    margin-right: 10%;
+    border-top: 1px solid;
+}
+.song:first-child{
+	border:none;
+}
+.song__name {
+	margin-left: 2%;
+}
+a:hover{
+	color:#F76907;
+}
+.chords {
+	width: 175px;
+	position: absolute;
+	right: 10%;
+}
+
+.footer {
+	background-color: #454D5D;
+	margin:0 auto;
+	width: 1000px;
+
+	border-left: 2px solid #F76907;
+	border-right: 2px solid #F76907;
+}
+.footer__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer__inner {
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+.footer__block {
+    width: 20%;
+    text-align: center;
+    margin: 0 6.35%;
+}
+.copyright {
+    background-color: #2B303B;
+    padding: 20px 0;
+}
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.5;
+}
+pre {
+	margin-bottom: 0;
+	padding-bottom: 1em; 
+}
